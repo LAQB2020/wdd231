@@ -62,10 +62,10 @@ nav{
     text-decoration: underline;
 }
 
-main{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0.5rem;
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto 3rem;
 }
 
 

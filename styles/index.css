@@ -8,12 +8,8 @@
 ========================================================= */
 
 main {
-    width: 90%;
-    max-width: 1200px;
-    margin: 2rem auto 3rem;
-
     display: grid;
-    grid-template-columns:2fr 1fr ;
+    grid-template-columns: 2fr 1fr;
     gap: 10px;
 }
 
@@ -167,11 +163,6 @@ main h1 {
     color:var(--white);
 
 }
-
-.courses{
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 
 /* Courses container */
 .courses {
