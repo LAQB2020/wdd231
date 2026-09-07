@@ -1,0 +1,195 @@
+:root{
+    --navyblue: #0F1F33;
+    --lightgray: #E8ECEF;
+    --white: #FFFFFF;
+    --gray: #64748B;
+    --background:#E8ECEF;
+
+    --text: #1C1C1C;
+    --titles: #1F3B5C;
+    --border: #D6DCE2;
+    
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin:  auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: var(--background);
+    max-width: 1200px;
+    
+}
+
+header{
+    background: var(--navyblue);
+    color: white;
+    padding: 5px; 
+    border-radius: 10px;
+    
+    }
+#my-name{
+    display: none;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    }
+
+.navigation{
+    display: none;
+    list-style: none;
+    justify-content: space-around;
+    padding: 1.2rem 0rem 0rem 0rem;
+    font-size: 1.5rem;
+    background: var(--lightgray);
+    width: 100%;
+}
+
+.navigation a{
+    color: var(--lightgray);
+    text-decoration: none;
+    text-align: center;
+}
+.navigation a:hover{
+    text-decoration: underline;
+}
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+
+#logo{
+    width: 40px;
+    height: auto;
+    margin: 10px 5% 10px 10px;
+}
+
+footer{
+    background: var(--navyblue);
+    color:var(--lightgray);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-links img {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+footer p {
+    margin: 0.2rem;
+}
+
+footer a{
+    color: var(--lightgray);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Responsive menu*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: var(--lightgray);
+}
+
+#menu.open::before {
+	content:  "✖";
+    color: var(--lightgray);
+}
+
+.open {
+    display:block;
+    text-align: center;
+    background: var(--navyblue);
+}
+
+.stuff {
+	margin: 0.5rem;
+	border: 1px solid rgb(0  0  0 / 0.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+}
+
+@media  screen and (min-width: 600px){
+    
+    #course-title{
+        font-size: 2.5rem;
+    }
+    #menu{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: var(--navyblue);
+    
+    }
+    .navigation{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: var(--navyblue);
+    }
+
+    .navigation a{
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .stuff{
+        margin: 1rem auto;
+    }
+
+    header{
+        display: block;
+    }
+
+    #logo{
+    width: 60px;
+    height: auto;
+    /*margin: 10px 25% 10px 10px;*/
+    margin: 10px 10px 0px 10px
+    }
+
+    #my-name{
+        display: inline;
+        font-size: 2.5rem;
+        
+    }
+    
+}
