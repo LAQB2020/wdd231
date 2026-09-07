@@ -11,6 +11,8 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
+    max-width: 1200px;
+    margin: 2rem auto 3rem;
 }
 
 main h1 {
