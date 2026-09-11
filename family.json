@@ -1,0 +1,41 @@
+{
+    "family-name":"Quezada Bautista",
+    "move-in-date":"2026-08-09",
+    "number-of-people":6,
+    "is-visited":true,
+    "members":[
+        {
+            "name":"Luis Quezada Bautista",
+            "gender":"male",
+            "birthday":"24-05-1998"
+        },
+
+        {
+            "name":"Zeniff Quezada Bautista",
+            "gender":"male",
+            "birthday":"02-02-2001"
+        },
+
+        {
+            "name":"Laura Quezada Bautista",
+            "gender":"female",
+            "birthday":"27-12-2005"
+        },
+
+        {
+            "name":"Alejandra Quezada Bautista",
+            "gender":"female",
+            "birthday":"15-06-2008"
+        },
+        {
+            "name":"Margarita Bautista Cano",
+            "gender":"female",
+            "birthday":"17-10-1971"
+        },
+        {
+            "name":"Alejandro Quezada Guzman",
+            "gender":"male",
+            "birthday":"06-04-1973"
+        }
+    ]
+}
