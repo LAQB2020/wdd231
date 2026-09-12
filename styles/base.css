@@ -62,7 +62,9 @@ nav{
     text-decoration: underline;
 }
 
-
+.navigation a.active {
+    text-decoration: underline;
+}
 
 
 #logo{
