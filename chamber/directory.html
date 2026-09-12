@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Chamber of Commerce</title>
+
+    <meta name="description" content="WDD 231  Web Fronted Development Luis Quezada. This is directory of chamber of commerce">
+    <meta name="author" content="Luis Quezada">
+
+    <meta property="og:title" content="Querétaro Aerospace & Aviation Chamber">
+    <meta property="og:description" content="Connect with Querétaro's aerospace community, discover local companies, industry events, business opportunities, and resources.">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="https://laqb2020.github.io/wdd231/chamber">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    
+    <link rel="stylesheet" href="./styles/base-small.css">
+    <link rel="stylesheet" href="./styles/base-large.css">
+    
+    
+    <script src="./scripts/directory.js" defer ></script>
+    <script src="./scripts/footer.js" defer ></script>
+    <script src="./scripts/base.js" defer ></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./images/favicon.ico">
+
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="./images/logo.svg" alt="Mylogo">
+        <button type="button" id="menu"></button>   
+        <p id="my-name"> Querétaro Aerospace & Aviation Chamber</p>   
+        <nav>
+            <ul class="navigation">
+                <li><a href="./index.html" id="home">Home</a></li>
+                <li><a href="./discover.html" id="discover">Discover</a></li>
+                <li><a href="./directory.html" id="directory" class="active">Directory</a></li>
+                <li><a href="./join.html" id="join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+                <div class="view-selection ">
+                    <button id="list">List</button>
+                    <button id="grid">Grid</button>
+                </div>
+
+                <section class="members-container grid-view"></section>
+        
+             
+    </main>
+
+    <footer>
+
+        <div class="chamber-information">
+             <h3>Querétaro Aerospace & Aviation Chamber</h3>
+            <p>Praxedis Guerrero 107A</p>
+            <p>Santiago de Querétaro, Querétaro, Mexico</p>
+            <p>angel.quezadab@outlook.com</p>
+            <p>+52 771 341 4409</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/laqb" aria-label="LinkedIn">
+                <img src="./images/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com/LAQB2020" aria-label="GitHub">
+                <img src="./images/github.svg" alt="GitHub">
+            </a>
+
+        </div>
+        <div class="personal-information">
+            <p>WDD231 Class Project</p>
+            <p>Luis Quezada</p>
+            <p><span>©<span id="current-year"></span> Querétaro Aerospace & Aviation Chamber</span></p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>  
+        
+    </footer>
+    
+</body>
+</html>

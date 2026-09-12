@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Safran Landing Systems",
+        "address": "Carretera Estatal 200 Querétaro-Tequisquiapan Km. 22.547-B, Parque Aeroespacial de Querétaro, 76278 Colón, Querétaro, Mexico",
+        "phoneNumber": "+52 442 153 3900",
+        "url": "https://www.safran-group.com/",
+        "img": "safran-landing-systems.webp",
+        "membership": 3,
+        "membershipName": "Gold",
+        "category": "Landing Systems",
+        "description": "Aerospace company specializing in landing gear components and systems for commercial aircraft."
+    },
+    {
+        "name": "GE Aerospace",
+        "address": "Querétaro, Querétaro, Mexico",
+        "phoneNumber": "+52 771 341 4409",
+        "url": "https://www.geaerospace.com/",
+        "img": "ge-aerospace.webp",
+        "membership": 3,
+        "membershipName": "Gold",
+        "category": "Aerospace Engineering",
+        "description": "Aerospace engineering center focused on aviation technology, engines, avionics, testing, and advanced engineering."
+    },
+    {
+        "name": "Aernnova Aerospace Mexico",
+        "address": "Av. Industria de la Transformación 431, Parque Industrial Querétaro, 76220 Santiago de Querétaro, Querétaro, Mexico",
+        "phoneNumber": "+52 442 227 2850",
+        "url": "https://www.aernnova.com/",
+        "img": "aernnova.webp",
+        "membership": 3,
+        "membershipName": "Gold",
+        "category": "Aerostructures",
+        "description": "Aerospace company specializing in aerostructures, engineering, composite components, and metallic components."
+    },
+    {
+        "name": "Airbus",
+        "address": "Carretera Estatal 200 Querétaro-Tequisquiapan Km. 24+120, Municipio de Colón, 76270 Querétaro, Mexico",
+        "phoneNumber": "+52 442 256 2600",
+        "url": "https://www.airbus.com/",
+        "img": "airbus.webp",
+        "membership": 3,
+        "membershipName": "Gold",
+        "category": "Aircraft Manufacturing",
+        "description": "Global aerospace manufacturer with a Querétaro facility producing aircraft components including emergency exit and bulk cargo doors."
+    },
+    {
+        "name": "Bombardier",
+        "address": "Carretera Querétaro-Tequisquiapan Km. 22.5, 76270 Colón, Querétaro, Mexico",
+        "phoneNumber": "+52 442 101 7500",
+        "url": "https://bombardier.com/",
+        "img": "bombardier.webp",
+        "membership": 2,
+        "membershipName": "Silver",
+        "category": "Aircraft Manufacturing",
+        "description": "Aerospace manufacturer with aircraft production operations in the Querétaro aerospace cluster."
+    },
+    {
+        "name": "ITP Aero",
+        "address": "Acceso IV No. 6, Zona Industrial Benito Juárez, 76120 Santiago de Querétaro, Querétaro, Mexico",
+        "phoneNumber": "+52 442 296 3900",
+        "url": "https://www.itpaero.com/",
+        "img": "itp-aero.webp",
+        "membership": 2,
+        "membershipName": "Silver",
+        "category": "Aero Engines",
+        "description": "Aerospace company involved in engineering, manufacturing, and testing of aircraft engine components and systems."
+    },
+    {
+        "name": "Daher",
+        "address": "Carretera 200 Querétaro-Tequisquiapan, Parque Industrial Aerotech, Colón, Querétaro, Mexico",
+        "phoneNumber": "+52 442 478 2312",
+        "url": "https://www.daher.com/",
+        "img": "daher.webp",
+        "membership": 2,
+        "membershipName": "Silver",
+        "category": "Aerospace Services",
+        "description": "Aerospace company providing industrial services, engineering, logistics, and support for aerospace manufacturing operations."
+    }
+]
+    

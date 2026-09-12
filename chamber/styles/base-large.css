@@ -1,0 +1,201 @@
+/* =========================================================
+   LARGE SCREEN STYLES
+   Applies to screens 768px and wider
+   ========================================================= */
+
+@media screen and (min-width: 768px) {
+
+
+    /* =====================================================
+       1. HEADER
+       ===================================================== */
+
+    header {
+        display: grid;
+
+        grid-template-columns: 0.3fr 2fr 1fr;
+    }
+
+
+    /* Chamber logo */
+
+    #logo {
+        width: 60px;
+        height: auto;
+
+        margin: 10px 10px 0 10px;
+    }
+
+
+    /* Chamber name */
+
+    #my-name {
+        display: inline;
+
+        font-size: 1.5rem;
+
+        padding: 1.2rem 0 0 0;
+    }
+
+
+    /* =====================================================
+       2. NAVIGATION
+       ===================================================== */
+
+    /* Hide hamburger button on large screens */
+
+    #menu {
+        display: none;
+    }
+
+
+    /* Navigation container */
+
+    nav {
+        display: flex;
+
+        align-items: center;
+
+        width: 100%;
+
+        background-color: var(--navyblue);
+    }
+
+
+    /* Navigation list */
+
+    .navigation {
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-evenly;
+
+        width: 100%;
+
+        padding: 1.2rem 0 0 0;
+
+        background: var(--navyblue);
+
+        font-size: 1rem;
+    }
+
+
+    /* Navigation links */
+
+    .navigation a {
+        display: block;
+
+        flex: 1 1 100%;
+    }
+
+
+    /* =====================================================
+       3. MAIN CONTENT
+       ===================================================== */
+
+    /* Add large-screen styles for your main content here.
+
+       Example:
+
+       main {
+           padding: 2rem;
+       }
+
+       .directory-container {
+           ...
+       }
+    */
+
+
+    /* =====================================================
+       4. FOOTER
+       ===================================================== */
+
+    footer {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        align-items: center;
+
+        padding: 0.5rem;
+    }
+
+
+    /* Chamber information */
+
+    .chamber-information {
+        text-align: left;
+    }
+
+
+    /* Social media links */
+
+    .social-links {
+        display: flex;
+
+        justify-content: center;
+
+        gap: 1.5rem;
+    }
+
+
+    /* Personal information */
+
+    .personal-information {
+        text-align: left;
+    }
+
+
+    /* =========================================================
+   Web CERTIFICATE COURSES
+        ========================================================= */
+        .view-selection{
+            text-align: center;
+        }
+        .view-selection button{
+
+            cursor:pointer;
+
+            padding:.7rem 1.5rem;
+
+            border:1px solid var(--border);
+
+            background:var(--white);
+
+            color:var(--titles);
+
+            border-radius:8px;
+
+            transition:.3s;
+
+            font-weight:600;
+
+        }
+
+        .view-selection button:hover{
+
+            background:var(--navyblue);
+
+            color:var(--white);
+
+        }
+
+        .view-selection button.active{
+
+            background:var(--navyblue);
+
+            color:var(--white);
+
+        }
+
+
+        .members-container {
+    padding: 1rem;
+}
+
+
+
+
+}
