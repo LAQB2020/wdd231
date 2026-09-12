@@ -31,6 +31,10 @@ body {
     background: var(--background);
 }
 
+h1{
+    text-align: center;
+}
+
 
 /* =========================================================
    3. HEADER
