@@ -370,3 +370,391 @@ footer a {
     background-color: var(--titles);
 }
 
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    padding: 1rem;
+    background-color: var(--navyblue);
+    color: var(--white);
+}
+
+.hero-content h1 {
+    margin-top: 0;
+    color: var(--white);
+}
+
+.hero-content p {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+
+    background-color: var(--white);
+    color: var(--navyblue);
+
+    border-radius: 6px;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--lightgray);
+}
+
+
+/* =========================
+   EVENTS + WEATHER
+========================= */
+
+.home-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.home-card {
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: 1rem;
+}
+
+.home-card h2 {
+    margin-top: 0;
+    color: var(--titles);
+
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+
+/* =========================
+   EVENTS
+========================= */
+
+.events article {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.events article:last-child {
+    border-bottom: none;
+}
+
+.events h3 {
+    margin-bottom: 0.25rem;
+}
+
+.events p {
+    margin-bottom: 0.4rem;
+}
+
+
+/* =========================
+   WEATHER
+========================= */
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.weather-current img {
+    width: 70px;
+    height: 70px;
+}
+
+.weather-temperature {
+    margin: 0;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: var(--titles);
+}
+
+.weather-description {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+
+/* =========================
+   FORECAST
+========================= */
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.forecast-card {
+    padding: 0.75rem;
+
+    background-color: var(--lightgray);
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.forecast-card h3 {
+    margin-top: 0;
+}
+
+.forecast-temperature {
+    margin: 0;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MEMBER SPOTLIGHTS
+========================= */
+
+.spotlights {
+    margin-bottom: 1rem;
+}
+
+.spotlights > h2 {
+    margin-bottom: 1rem;
+
+    color: var(--titles);
+    text-align: center;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+/* =========================
+   MEMBER CARD
+========================= */
+
+.member-card {
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.member-card img {
+    display: block;
+
+    width: 150px;
+    height: 80px;
+
+    object-fit: contain;
+
+    margin: 0 auto 1rem;
+}
+
+.member-card h3 {
+    margin: 0 0 0.5rem;
+
+    color: var(--titles);
+}
+
+.member-card p {
+    margin-bottom: 0.4rem;
+}
+
+.membership-level {
+    display: inline-block;
+
+    padding: 0.3rem 0.6rem;
+    margin-bottom: 0.75rem;
+
+    background-color: var(--navyblue);
+    color: var(--white);
+
+    border-radius: 5px;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.member-card a {
+    display: inline-block;
+
+    margin-top: 0.75rem;
+    padding: 0.6rem 0.9rem;
+
+    background-color: var(--navyblue);
+    color: var(--white);
+
+    border-radius: 6px;
+
+    text-decoration: none;
+}
+
+.member-card a:hover,
+.member-card a:focus {
+    background-color: var(--titles);
+}
+
+/* ==============================
+   Spotlight Cards
+   ============================== */
+
+.spotlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.spotlight-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 6px rgba(15, 31, 51, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.spotlight-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    padding: 0.5rem;
+}
+
+.spotlight-card h3 {
+    color: var(--titles);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.spotlight-card p {
+    color: var(--text);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.spotlight-card a {
+    color: var(--titles);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+.spotlight-card .membership {
+    display: inline-block;
+    background-color: var(--lightgray);
+    color: var(--text);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* =========================
+   WEATHER
+========================= */
+
+.weather {
+    text-align: center;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: var(--titles);
+}
+
+#description {
+    margin: 0;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.weather h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--titles);
+}
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+#forecast article {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+#forecast h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+#forecast p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--titles);
+}

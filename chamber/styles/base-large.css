@@ -197,5 +197,123 @@
 
 
 
+ .hero {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+        max-height: 500px;
+
+        object-fit: cover;
+    }
+
+    .hero-content {
+        position: absolute;
+
+        left: 2rem;
+        bottom: 2rem;
+
+        max-width: 550px;
+
+        padding: 1.5rem;
+
+        background-color: rgba(15, 31, 51, 0.92);
+
+        border-radius: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+
+    /* =========================
+       EVENTS + WEATHER
+    ========================= */
+
+    .home-info {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 1.5rem;
+    }
+
+    .home-card {
+        padding: 1.5rem;
+    }
+
+
+    /* =========================
+       WEATHER
+    ========================= */
+
+    .weather-current img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .weather-temperature {
+        font-size: 2.5rem;
+    }
+
+
+    /* =========================
+       FORECAST
+    ========================= */
+
+    #forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* =========================
+       SPOTLIGHTS
+    ========================= */
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 1.5rem;
+    }
+
+    .member-card {
+        padding: 1.5rem;
+    }
+
+    .member-card img {
+        width: 160px;
+        height: 90px;
+    }
+
+/* =========================
+   WEATHER - LARGE SCREEN
+========================= */
+
+#current-weather {
+    min-height: 150px;
+}
+
+#forecast {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#forecast article {
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#forecast article:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
 
 }
+
+
+
+
+
