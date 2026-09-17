@@ -270,6 +270,9 @@
        SPOTLIGHTS
     ========================= */
 
+    .spotlights{
+        grid-column: 1/3;
+    }
     #spotlight-container {
         grid-template-columns: repeat(3, 1fr);
 
