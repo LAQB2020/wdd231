@@ -151,46 +151,7 @@
     /* =========================================================
    Web CERTIFICATE COURSES
         ========================================================= */
-        .view-selection{
-            text-align: center;
-        }
-        .view-selection button{
-
-            cursor:pointer;
-
-            padding:.7rem 1.5rem;
-
-            border:1px solid var(--border);
-
-            background:var(--white);
-
-            color:var(--titles);
-
-            border-radius:8px;
-
-            transition:.3s;
-
-            font-weight:600;
-
-        }
-
-        .view-selection button:hover{
-
-            background:var(--navyblue);
-
-            color:var(--white);
-
-        }
-
-        .view-selection button.active{
-
-            background:var(--navyblue);
-
-            color:var(--white);
-
-        }
-
-
+       
         .members-container {
     padding: 1rem;
 }
