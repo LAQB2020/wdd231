@@ -355,16 +355,23 @@ footer a {
 }
 
 .view-selection button {
-    background-color: var(--navyblue);
-    color: var(--white);
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
     cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid var(--border);
+    background-color: var(--white);
+    color: var(--titles);
+    border-radius: 8px;
+    font-weight: 600;
 }
 
 .view-selection button:hover {
-    background-color: var(--titles);
+    background-color: var(--navyblue);
+    color: var(--white);
+}
+
+.view-selection button.active {
+    background-color: var(--navyblue);
+    color: var(--white);
 }
 
 
