@@ -46,10 +46,17 @@ const displayMembers = (members) => {
 };
 
 
+// Vista inicial
+gridButton.classList.add('active');
+
+
 // Cambiar a vista de lista
 listButton.addEventListener('click', () => {
     membersContainer.classList.add('list-view');
     membersContainer.classList.remove('grid-view');
+
+    listButton.classList.add('active');
+    gridButton.classList.remove('active');
 });
 
 
@@ -57,8 +64,10 @@ listButton.addEventListener('click', () => {
 gridButton.addEventListener('click', () => {
     membersContainer.classList.add('grid-view');
     membersContainer.classList.remove('list-view');
+
+    gridButton.classList.add('active');
+    listButton.classList.remove('active');
 });
 
 
 getMembersData();
-
