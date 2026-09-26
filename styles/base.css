@@ -140,6 +140,63 @@ footer a{
 	height: 100vh;
 }
 
+
+/* =========================
+   COURSE MODAL
+   ========================= */
+
+dialog {
+    width: 90%;
+    max-width: 600px;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--text);
+    box-shadow: 0 0 3rem rgb(0 0 0 / 40%);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 55%);
+}
+
+dialog h2 {
+    color: var(--titles);
+    margin-bottom: 0.75rem;
+}
+
+dialog h3 {
+    color: var(--navyblue);
+    margin-bottom: 1rem;
+}
+
+dialog p {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+dialog strong {
+    color: var(--titles);
+}
+
+dialog button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--lightgray);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+dialog button:hover {
+    background-color: var(--border);
+}
+
+
 @media  screen and (min-width: 600px){
     
     #course-title{

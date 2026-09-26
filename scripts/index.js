@@ -80,6 +80,7 @@ const courses = [
 
 const coursesContainer = document.querySelector('.courses');
 const creditsContainer = document.querySelector('#credits');
+const courseDetails = document.querySelector('#course-details');
 
 function displayCourses(courseList) {
 
@@ -102,6 +103,10 @@ function displayCourses(courseList) {
             ${course.completed ? '<span class="completed-label">Completed</span>' : ''}
         `;
 
+            courseCard.addEventListener('click', () => {
+        displayCourseDetails(course);
+    });
+
         coursesContainer.appendChild(courseCard);
     });
 
@@ -111,6 +116,49 @@ function displayCourses(courseList) {
 
 creditsContainer.textContent = totalCredits;
 }
+
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" aria-label="Close course details">❌</button>
+
+        <h2>${course.subject} ${course.number}</h2>
+
+        <h3>${course.title}</h3>
+
+        <p>
+            <strong>Credits:</strong> ${course.credits}
+        </p>
+
+        <p>
+            <strong>Certificate:</strong> ${course.certificate}
+        </p>
+
+        <p>
+            ${course.description}
+        </p>
+
+        <p>
+            <strong>Technologies:</strong> ${course.technology.join(', ')}
+        </p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal');
+
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+
+
+courseDetails.addEventListener('click', (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
 
 displayCourses(courses);
 
