@@ -269,6 +269,44 @@
     transition: transform 0.2s ease;
 }
 
+/* =========================================================
+   10. LARGE SCREEN
+   ========================================================= */
+
+
+
+    .join-intro {
+        padding: 1.5rem;
+    }
+
+
+    .join-container {
+        grid-template-columns: 1.4fr 1fr;
+
+        align-items: start;
+
+        gap: 2rem;
+
+        padding: 1.5rem;
+    }
+
+
+    .application-form {
+        padding: 1.5rem;
+    }
+
+
+    .membership-levels {
+        margin-top: 0;
+    }
+
+
+    .membership-card {
+        padding: 1.5rem;
+    }
+
+.thank-you { margin-top: 5rem; margin-bottom: 5rem; }
+
 
 }
 

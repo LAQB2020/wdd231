@@ -753,3 +753,452 @@ footer a {
     font-weight: bold;
     color: var(--titles);
 }
+
+/* =========================================================
+   JOIN PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   1. INTRODUCTION
+   ========================================================= */
+
+.join-intro {
+    padding: 1rem;
+    text-align: center;
+}
+
+.join-intro h1 {
+    color: var(--titles);
+    margin-bottom: 0.75rem;
+}
+
+.join-intro p {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   2. JOIN CONTAINER
+   ========================================================= */
+
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   3. APPLICATION FORM
+   ========================================================= */
+
+.application-form {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+.application-form h2 {
+    color: var(--titles);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+
+/* Form layout */
+
+.application-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* Labels */
+
+.application-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    color: var(--text);
+    font-weight: 600;
+}
+
+
+/* Inputs */
+
+.application-form input[type="text"],
+.application-form input[type="email"],
+.application-form input[type="tel"],
+.application-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 0.75rem;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background-color: var(--white);
+    color: var(--text);
+
+    font: inherit;
+}
+
+
+/* Textarea */
+
+.application-form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+
+/* Focus state */
+
+.application-form input:focus,
+.application-form textarea:focus {
+    outline: 3px solid var(--lightgray);
+    border-color: var(--titles);
+}
+
+
+/* =========================================================
+   4. MEMBERSHIP LEVEL FIELDSET
+   ========================================================= */
+
+.application-form fieldset {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.application-form legend {
+    padding: 0 0.5rem;
+    color: var(--titles);
+    font-weight: 700;
+}
+
+.application-form fieldset label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.5rem;
+
+    margin: 0.75rem 0;
+
+    font-weight: 400;
+}
+
+.application-form input[type="radio"] {
+    width: auto;
+}
+
+
+/* =========================================================
+   5. SUBMIT BUTTON
+   ========================================================= */
+
+.application-form input[type="submit"] {
+    padding: 0.85rem;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--navyblue);
+    color: var(--white);
+
+    font: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.application-form input[type="submit"]:hover,
+.application-form input[type="submit"]:focus {
+    background-color: var(--titles);
+}
+
+
+/* =========================================================
+   6. MEMBERSHIP CARDS
+   ========================================================= */
+
+.membership-levels {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-levels h2 {
+    color: var(--titles);
+    margin: 0;
+}
+
+
+/* Individual cards */
+
+.membership-card {
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: 1.25rem;
+
+    box-shadow: 0 2px 5px var(--shadow);
+
+    animation: membershipEntrance 0.7s ease-out both;
+}
+
+
+/* Staggered entrance animation */
+
+.membership-card:nth-of-type(2) {
+    animation-delay: 0.15s;
+}
+
+.membership-card:nth-of-type(3) {
+    animation-delay: 0.30s;
+}
+
+.membership-card:nth-of-type(4) {
+    animation-delay: 0.45s;
+}
+
+.membership-card:nth-of-type(5) {
+    animation-delay: 0.60s;
+}
+
+
+.membership-card h3 {
+    color: var(--titles);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.membership-card p {
+    line-height: 1.5;
+}
+
+
+/* Learn more button */
+
+.modal-link {
+    padding: 0.5rem 0;
+
+    border: none;
+    background: none;
+
+    color: var(--titles);
+
+    font: inherit;
+    font-weight: 700;
+
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+.modal-link:hover,
+.modal-link:focus {
+    color: var(--navyblue);
+}
+
+
+/* =========================================================
+   7. CARD ENTRANCE ANIMATION
+   ========================================================= */
+
+@keyframes membershipEntrance {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   8. DIALOG MODALS
+   ========================================================= */
+
+dialog {
+    width: min(90%, 500px);
+
+    padding: 0;
+
+    border: none;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 25px var(--shadow);
+}
+
+dialog::backdrop {
+    background-color: rgba(15, 31, 51, 0.75);
+}
+
+.modal-content {
+    position: relative;
+    padding: 2rem;
+}
+
+.modal-content h2 {
+    color: var(--titles);
+    margin-top: 0;
+}
+
+.modal-content p {
+    margin-bottom: 1rem;
+}
+
+.modal-content li {
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+
+
+/* Close button */
+
+.close-modal {
+    position: absolute;
+
+    top: 0.5rem;
+    right: 0.75rem;
+
+    border: none;
+    background: none;
+
+    color: var(--text);
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: var(--titles);
+}
+
+
+/* =========================================================
+   9. THANK YOU PAGE
+   ========================================================= */
+
+.thankyou {
+    max-width: 800px;
+
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.thankyou h1 {
+    color: var(--titles);
+    margin-bottom: 1rem;
+}
+
+.thankyou > p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.submitted-information {
+    margin-top: 2rem;
+
+    padding: 1.5rem;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+.submitted-information h2 {
+    color: var(--titles);
+    margin-top: 0;
+}
+
+.submitted-information p {
+    padding: 0.75rem 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.submitted-information p:last-child {
+    border-bottom: none;
+}
+
+
+/* ========================================================= THANK YOU PAGE ========================================================= */ 
+.thank-you { 
+    max-width: 700px; 
+    margin: 4rem auto; 
+    padding: 2.5rem; 
+    background-color: var(--white); 
+    border: 1px solid var(--border); 
+    border-radius: 12px; box-shadow: 0 4px 12px rgba(15, 31, 51, 0.08); } 
+    
+.thank-you h1 { 
+    color: var(--titles); text-align: center; 
+    margin-bottom: 1rem; 
+} 
+    
+.thank-you > p { 
+    color: var(--text); 
+    text-align: center; 
+    line-height: 1.6; 
+    margin-bottom: 2rem; } 
+    
+/* ========================================================= APPLICATION SUMMARY ========================================================= */ 
+.application-summary { 
+    background-color: var(--light-gray); 
+    border-radius: 8px; 
+    padding: 1.5rem; margin-bottom: 2rem; 
+} 
+.application-summary h2 { 
+    color: var(--titles); 
+    font-size: 1.25rem; 
+    margin-bottom: 1.25rem; 
+} 
+.application-summary p { 
+    color: var(--text); margin: 0.75rem 0; 
+    line-height: 1.5; 
+} 
+    
+.application-summary strong { 
+    color: var(--titles); 
+} 
+
+/* ========================================================= RETURN HOME BUTTON ========================================================= */ 
+.return-home { 
+    display: block; 
+    width: fit-content; 
+    margin: 0 auto; 
+    padding: 0.8rem 1.5rem; 
+    background-color: var(--primary); 
+    color: var(--white); 
+    text-decoration: none; 
+    border-radius: 6px; 
+    font-weight: 600; 
+    transition: background-color 0.3s ease; 
+} 
+.return-home:hover { 
+    background-color: var(--secondary); 
+}
