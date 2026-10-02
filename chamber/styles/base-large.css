@@ -1,3 +1,25 @@
+/* ================================
+   DISCOVER PAGE
+   MEDIUM
+   641px - 1024px
+================================ */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-areas:
+            "one two"
+            "three four"
+            "five six"
+            "seven eight";
+    }
+
+}
+
+
+
 /* =========================================================
    LARGE SCREEN STYLES
    Applies to screens 768px and wider
@@ -306,6 +328,20 @@
     }
 
 .thank-you { margin-top: 5rem; margin-bottom: 5rem; }
+
+
+
+ .container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-areas:
+            "one two three four"
+            "five six seven eight"
+            
+    }
 
 
 }
