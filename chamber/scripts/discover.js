@@ -19,7 +19,7 @@ function displayPlaces(places){
         <h2>${place.name}</h2> 
         
         <figure> 
-            <img src="${place.image}" 
+            <img src="./images/${place.image}" 
             alt="${place.name}" 
             loading="lazy" width="300"
             height="200" > 

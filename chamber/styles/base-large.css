@@ -343,6 +343,11 @@
             
     }
 
+    .place-card button, .place-card p {
+        width: 80%;
+    }
+
+
 
 }
 

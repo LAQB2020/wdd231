@@ -1334,6 +1334,7 @@ main h1 {
     grid-area: description;
     margin: 1rem 10px;
     line-height: 1.5;
+    
 }
 
 
@@ -1349,6 +1350,7 @@ main h1 {
     color: #ffffff;
 
     cursor: pointer;
+        
 }
 
 
