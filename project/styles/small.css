@@ -1,0 +1,471 @@
+/* =========================================================
+   1. COLOR VARIABLES
+   ========================================================= */
+
+:root {
+    --navyblue: #0F1F33;
+    --lightgray: #E8ECEF;
+    --white: #FFFFFF;
+    --gray: #64748B;
+    --background: #E8ECEF;
+
+    --text: #1C1C1C;
+    --titles: #1F3B5C;
+    --border: #D6DCE2;
+
+    --shadow: #0F1F3314;
+    --overlay: #0F1F33EB;
+}
+
+
+/* =========================================================
+   2. GENERAL / BODY
+   ========================================================= */
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background: var(--background);
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* =========================================================
+   3. HEADER
+   ========================================================= */
+
+header {
+    background: var(--navyblue);
+    color: var(--white);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/* Chamber name
+   Hidden on small screens. It will be displayed in
+   base-large.css on larger screens. */
+
+#my-name {
+    display: none;
+}
+
+
+/* Logo */
+
+header img {
+    width: 40px;
+    height: auto;
+    margin: 10px 5% 10px 10px;
+}
+
+
+/* =========================================================
+   4. NAVIGATION
+   ========================================================= */
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+
+/* Main navigation list
+   Hidden by default on small screens.
+   JavaScript adds the "open" class when the menu button
+   is clicked. */
+
+.navigation {
+    display: none;
+
+    list-style: none;
+    width: 100%;
+
+    padding: 1.2rem 0 0 0;
+
+    font-size: 0.8rem;
+
+    background: var(--navyblue);
+}
+
+
+/* Navigation links */
+
+.navigation a {
+    display: block;
+
+    color: var(--lightgray);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Navigation hover effect */
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+/* Wayfinding
+   Indicates the page where the user currently is. */
+
+.navigation a.active {
+    text-decoration: underline;
+}
+
+
+/* Open mobile navigation
+   JavaScript adds/removes the "open" class. */
+
+.navigation.open {
+    display: block;
+    text-align: center;
+    background: var(--navyblue);
+}
+
+
+/* =========================================================
+   5. MOBILE MENU BUTTON
+   ========================================================= */
+
+#menu {
+    font-size: 1.5rem;
+
+    border: 0;
+    background: none;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+/* Hamburger icon */
+
+#menu::before {
+    content: "☰";
+    color: var(--lightgray);
+}
+
+
+/* Close icon when menu is open */
+
+#menu.open::before {
+    content: "✖";
+    color: var(--lightgray);
+}
+
+
+
+
+
+/* =========================================================
+   7. FOOTER
+   ========================================================= */
+
+footer {
+    background: var(--navyblue);
+    color: var(--lightgray);
+
+    text-align: center;
+
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* Chamber information */
+
+.chamber-information {
+    text-align: left;
+}
+
+
+/* Social media links */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+
+/* Social media icons */
+
+.social-links img {
+    width: 45px;
+    height: 45px;
+
+    margin-top: 10px;
+}
+
+
+/* Footer paragraphs */
+
+footer p {
+    margin: 0.2rem;
+}
+
+
+/* Footer links */
+
+footer a {
+    color: var(--lightgray);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Personal information */
+
+.personal-information {
+    text-align: left;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    padding: 1rem;
+    background-color: var(--navyblue);
+    color: var(--white);
+}
+
+.hero-content h1 {
+    margin-top: 0;
+    color: var(--white);
+}
+
+.hero-content p {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+
+    background-color: var(--white);
+    color: var(--navyblue);
+
+    border-radius: 6px;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--lightgray);
+}
+
+
+/* =========================
+   EVENTS + WEATHER
+========================= */
+
+.home  {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.home-card {
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: .5rem;
+}
+
+.home-card h2 {
+    margin-top: 0;
+    color: var(--titles);
+
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+/* =========================
+   WEATHER
+========================= */
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.weather-current img {
+    width: 70px;
+    height: 70px;
+}
+
+.weather-temperature {
+    margin: 0;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: var(--titles);
+}
+
+.weather-description {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+
+/* =========================
+   FORECAST
+========================= */
+
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.forecast-card {
+    padding: 0.75rem;
+
+    background-color: var(--lightgray);
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.forecast-card h3 {
+    margin-top: 0;
+}
+
+.forecast-temperature {
+    margin: 0;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+
+/* =========================
+   WEATHER
+========================= */
+
+.weather {
+    text-align: center;
+}
+
+#current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: var(--titles);
+}
+
+#description {
+    margin: 0;
+    text-transform: capitalize;
+    color: var(--text);
+}
+
+.weather h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--titles);
+}
+
+#forecast article {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+#forecast h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+#forecast p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--titles);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
