@@ -445,6 +445,277 @@ footer a {
 }
 
 
+/* ================================
+   SUGGEST COMPONENT PAGE
+================================ */
+
+.form-intro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.form-intro h1 {
+    margin-bottom: 1rem;
+}
+
+.form-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   FORM CONTAINER
+================================ */
+
+.form-container {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+.component-form {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.component-form h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+
+/* ================================
+   FIELDSETS
+================================ */
+
+.component-form fieldset {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.component-form legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: var(--titles);
+}
+
+
+/* ================================
+   LABELS
+================================ */
+
+.component-form label {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+.component-form input,
+.component-form select,
+.component-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--white);
+    color: var(--text);
+}
+
+
+/* ================================
+   TEXTAREA
+================================ */
+
+.component-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* ================================
+   FOCUS
+================================ */
+
+.component-form input:focus,
+.component-form select:focus,
+.component-form textarea:focus {
+    outline: 2px solid var(--titles);
+    outline-offset: 1px;
+}
+
+
+/* ================================
+   OPTIONAL TEXT
+================================ */
+
+.optional {
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: var(--gray);
+}
+
+
+/* ================================
+   SUBMIT BUTTON
+================================ */
+
+.component-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--titles);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.component-form button[type="submit"]:hover {
+    background-color: var(--navyblue);
+}
+
+
+ /* ================================
+    THANK YOU PAGE
+ ================================ */
+.thankyou-main {
+    display: grid;
+    width: 100%;
+}
+
+ .thankyou-intro {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 3rem 1rem 2rem;
+     text-align: center;
+ }
+
+ .thankyou-intro h1 {
+     margin-bottom: 1rem;
+     color: var(--titles);
+ }
+
+ .thankyou-intro p {
+     max-width: 700px;
+     margin: 0 auto;
+     line-height: 1.6;
+     color: var(--text);
+ }
+
+
+ /* ================================
+    REQUEST SUMMARY
+ ================================ */
+
+ .request-summary {
+    
+    
+     padding: 2rem;
+     background-color: var(--white);
+     border: 1px solid var(--border);
+     border-radius: 8px;
+     box-shadow: 0 2px 8px var(--shadow);
+      box-sizing: border-box;
+    
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+     
+ }
+
+ .request-summary h2 {
+     margin-top: 0;
+     margin-bottom: 1.5rem;
+     color: var(--titles);
+ }
+
+
+ /* ================================
+    COMPONENT DETAILS
+ ================================ */
+
+ #component-details h2 {
+     margin-bottom: 1.5rem;
+     color: var(--navyblue);
+ }
+
+ #component-details p {
+     margin: 0;
+     padding: 0.75rem 0;
+     border-bottom: 1px solid var(--border);
+     line-height: 1.5;
+ }
+
+ #component-details p:last-child {
+     border-bottom: none;
+ }
+
+ #component-details strong {
+     color: var(--titles);
+ }
+
+
+ /* ================================
+    ACTION BUTTONS
+ ================================ */
+
+ .thankyou-actions {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     margin: 0 auto 3rem;
+     padding: 0 1rem;
+ }
+
+ .thankyou-actions .button {
+     display: inline-block;
+     padding: 0.8rem 1.5rem;
+     border-radius: 5px;
+     background-color: var(--titles);
+     color: var(--white);
+     text-decoration: none;
+     font-weight: bold;
+     text-align: center;
+ }
+
+ .thankyou-actions .button:hover {
+     background-color: var(--navyblue);
+ }
+
+ .thankyou-actions .button.secondary {
+     background-color: var(--gray);
+ }
+
+ .thankyou-actions .button.secondary:hover {
+     background-color: var(--navyblue);
+ }
+
+
+ 
+
+
 
 
 

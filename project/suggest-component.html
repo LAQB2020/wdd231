@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Gear Component Explorer | Home Page</title>
+
+    <meta name="description" content="Explore aircraft landing gear components, their functions, applications, and manufacturers in this interactive component explorer.">
+    <meta name="author" content="Luis Quezada">
+
+    <meta property="og:title" content="Landing Gear Component Explorer | Home Page">
+    <meta property="og:description" content="Explore aircraft landing gear components, their functions, applications, and manufacturers in this interactive component explorer.">
+    <meta property="og:image" content="https://laqb2020.github.io/wdd231/images/og-image.webp">
+    <meta property="og:url" content="https://laqb2020.github.io/wdd231/project">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    
+    
+    <script src="./scripts/weather.js" defer ></script>
+    <script src="./scripts/footer.js" defer ></script>
+    <script src="./scripts/responsive-menu.js" defer ></script>
+    <script type="module" src="scripts/suggest.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./images/favicon.ico">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="./images/logo.svg" alt="Querétaro Aerospace & Aviation Chamber logo">
+        <button type="button" id="menu" aria-label="Open navigation menu"></button>
+        <p id="my-name"> Landing Gear Component Explorer</p>   
+        <nav>
+            <ul class="navigation">
+                <li><a href="./index.html" id="home" >Home</a></li>
+                <li><a href="./explorer.html" id="explorer">Explorer</a></li>
+                <li><a href="./suggest-component.html" id="suggest-component" class="active">Suggest a component</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+       <main>
+
+    <section class="form-intro">
+        <h1>Suggest a Landing Gear Component</h1>
+
+        <p>
+            Know a landing gear component that should be included in our
+            explorer? Submit a request with the available information.
+            Your suggestion can be reviewed for future inclusion in the catalog.
+        </p>
+    </section>
+
+    <div class="form-container">
+
+        <section class="component-form">
+
+            <h2>Component Suggestion</h2>
+
+            <form id="component-form" method="get" action="thankyou.html">
+
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label for="user-name">
+                        Your Name
+                        <input
+                            type="text"
+                            id="user-name"
+                            name="user-name"
+                            title="Enter your name"
+                            autocomplete="name"
+                            required
+                        >
+                    </label>
+
+                    <label for="email">
+                        Email Address
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            title="Enter your email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Component Information</legend>
+
+                    <label for="component-name">
+                        Component Name
+                        <input
+                            type="text"
+                            id="component-name"
+                            name="component-name"
+                            title="Enter the component name"
+                            placeholder="Example: Main Landing Gear Strut"
+                            required
+                        >
+                    </label>
+
+                    <label for="aircraft">
+                        Aircraft Application
+                        <input
+                            type="text"
+                            id="aircraft"
+                            name="aircraft"
+                            title="Enter the aircraft application"
+                            placeholder="Example: Airbus A320"
+                            required
+                        >
+                    </label>
+
+                    <label for="landing-gear">
+                        Landing Gear System
+
+                        <select
+                            id="landing-gear"
+                            name="landing-gear"
+                            required
+                        >
+                            <option value="" disabled selected>
+                                Select a system
+                            </option>
+
+                            <option value="Main Landing Gear">
+                                Main Landing Gear
+                            </option>
+
+                            <option value="Nose Landing Gear">
+                                Nose Landing Gear
+                            </option>
+
+                            <option value="Tail Landing Gear">
+                                Tail Landing Gear
+                            </option>
+                        </select>
+                    </label>
+
+                    <label for="manufacturer">
+                        Manufacturer
+                        <input
+                            type="text"
+                            id="manufacturer"
+                            name="manufacturer"
+                            title="Enter the component manufacturer"
+                            placeholder="Example: Safran Landing Systems"
+                            required
+                        >
+                    </label>
+
+                    <label for="part-number">
+                        Part Number
+                        <span class="optional">(Optional)</span>
+
+                        <input
+                            type="text"
+                            id="part-number"
+                            name="part-number"
+                            title="Enter the component part number"
+                            placeholder="Example: 201-12345-001"
+                        >
+                    </label>
+
+                    <label for="function">
+                        Component Function
+
+                        <textarea
+                            id="function"
+                            name="function"
+                            title="Describe the function of the component"
+                            placeholder="Describe the main function of this component..."
+                            required
+                        ></textarea>
+                    </label>
+
+                    <label for="description">
+                        Additional Information
+                        <span class="optional">(Optional)</span>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            title="Enter additional information about the component"
+                            placeholder="Add any other useful information..."
+                        ></textarea>
+                    </label>
+
+                </fieldset>
+
+                <button type="submit">
+                    Submit Component Request
+                </button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+             
+    
+
+    <footer>
+
+        <div class="chamber-information">
+             <h2>Querétaro Aerospace & Aviation Chamber</h2>
+            <p>Praxedis Guerrero 107A</p>
+            <p>Santiago de Querétaro, Querétaro, Mexico</p>
+            <p>angel.quezadab@outlook.com</p>
+            <p>+52 771 341 4409</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/laqb" aria-label="LinkedIn">
+                <img src="./images/linkedin.svg" alt="Luis Quezada on LinkedIn">
+            </a>
+
+            <a href="https://github.com/LAQB2020" aria-label="GitHub">
+                <img src="./images/github.svg" alt="Visit Luis Quezada on GitHub">
+            </a>
+
+        </div>
+        <div class="personal-information">
+            <p>WDD231 Final Project</p>
+            <p>Luis Quezada</p>
+            <p><span>©<span id="current-year"></span> Landing Gear Component Explorer</span></p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>  
+        
+    </footer>
+    
+</body>
+</html>
