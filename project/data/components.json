@@ -1,0 +1,248 @@
+{
+  "components": [
+    {
+      "id": "main-shock-strut",
+      "name": "Main Landing Gear Shock Strut",
+      "partNumber": "201-0001-001",
+      "category": "Main Landing Gear",
+      "aircraftApplication": "Airbus A320 Family",
+      "landingGearSystem": "Main Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Absorbs and dissipates the energy generated during landing and ground operations.",
+      "description": "The main landing gear shock strut is a structural component that absorbs landing loads using hydraulic fluid and compressed gas. It reduces the loads transmitted from the wheels to the aircraft structure.",
+      "materials": [
+        "High-strength steel",
+        "Titanium alloy"
+      ],
+      "image": "images/components/main-shock-strut.webp"
+    },
+    {
+      "id": "main-wheel",
+      "name": "Main Landing Gear Wheel",
+      "partNumber": "201-0002-001",
+      "category": "Main Landing Gear",
+      "aircraftApplication": "Boeing 737",
+      "landingGearSystem": "Main Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Supports the aircraft weight and provides the mounting interface for the tire and brake assembly.",
+      "description": "The main landing gear wheel supports high static and dynamic loads during landing, taxiing, braking, and takeoff.",
+      "materials": [
+        "Aluminum alloy",
+        "Steel"
+      ],
+      "image": "images/components/main-wheel.webp"
+    },
+    {
+      "id": "main-brake",
+      "name": "Main Landing Gear Brake",
+      "partNumber": "201-0003-001",
+      "category": "Main Landing Gear",
+      "aircraftApplication": "Airbus A350",
+      "landingGearSystem": "Main Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Converts the aircraft's kinetic energy into heat during braking.",
+      "description": "The main landing gear brake is installed on the main wheels and provides the braking force required to decelerate the aircraft after landing and during taxi operations.",
+      "materials": [
+        "Carbon",
+        "Steel",
+        "Aluminum alloy"
+      ],
+      "image": "images/components/main-brake.webp"
+    },
+    {
+      "id": "main-side-stay",
+      "name": "Main Landing Gear Side Stay",
+      "partNumber": "201-0004-001",
+      "category": "Main Landing Gear",
+      "aircraftApplication": "Airbus A320 Family",
+      "landingGearSystem": "Main Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Provides structural support and helps maintain the landing gear in the extended or retracted position.",
+      "description": "The side stay is a structural link that transfers loads within the landing gear assembly and contributes to the locking mechanism when the landing gear is extended.",
+      "materials": [
+        "High-strength steel",
+        "Titanium alloy"
+      ],
+      "image": "images/components/main-side-stay.webp"
+    },
+    {
+      "id": "main-axle",
+      "name": "Main Landing Gear Axle",
+      "partNumber": "201-0005-001",
+      "category": "Main Landing Gear",
+      "aircraftApplication": "Boeing 777",
+      "landingGearSystem": "Main Landing Gear",
+      "manufacturer": "Collins Aerospace",
+      "function": "Supports the main landing gear wheels and transfers loads between the wheels and landing gear structure.",
+      "description": "The main landing gear axle is a highly loaded structural component designed to withstand vertical, lateral, and braking loads during aircraft ground operations.",
+      "materials": [
+        "High-strength steel",
+        "Titanium alloy"
+      ],
+      "image": "images/components/main-axle.webp"
+    },
+    {
+      "id": "main-torque-link",
+      "name": "Main Landing Gear Torque Link",
+      "partNumber": "201-0006-001",
+      "category": "Main Landing Gear",
+      "aircraftApplication": "Airbus A330",
+      "landingGearSystem": "Main Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Controls the relative rotation between sections of the landing gear shock strut.",
+      "description": "The torque link assembly connects different sections of the shock strut and maintains the correct alignment of the landing gear during operation.",
+      "materials": [
+        "Steel",
+        "Titanium alloy"
+      ],
+      "image": "images/components/main-torque-link.webp"
+    },
+    {
+      "id": "nose-shock-strut",
+      "name": "Nose Landing Gear Shock Strut",
+      "partNumber": "301-0001-001",
+      "category": "Nose Landing Gear",
+      "aircraftApplication": "Airbus A320 Family",
+      "landingGearSystem": "Nose Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Absorbs vertical loads generated during nose gear touchdown and ground operations.",
+      "description": "The nose landing gear shock strut absorbs and dissipates energy during landing and taxiing while providing structural support between the aircraft and nose wheels.",
+      "materials": [
+        "High-strength steel",
+        "Titanium alloy"
+      ],
+      "image": "images/components/nose-shock-strut.webp"
+    },
+    {
+      "id": "nose-wheel",
+      "name": "Nose Landing Gear Wheel",
+      "partNumber": "301-0002-001",
+      "category": "Nose Landing Gear",
+      "aircraftApplication": "Boeing 787",
+      "landingGearSystem": "Nose Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Supports the front section of the aircraft and allows the aircraft to roll during ground operations.",
+      "description": "The nose landing gear wheels support a portion of the aircraft weight and are used during taxiing, takeoff, and landing operations.",
+      "materials": [
+        "Aluminum alloy",
+        "Steel"
+      ],
+      "image": "images/components/nose-wheel.webp"
+    },
+    {
+      "id": "nose-steering-actuator",
+      "name": "Nose Wheel Steering Actuator",
+      "partNumber": "301-0003-001",
+      "category": "Nose Landing Gear",
+      "aircraftApplication": "Airbus A320 Family",
+      "landingGearSystem": "Nose Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Controls the direction of the nose landing gear during ground operations.",
+      "description": "The steering actuator converts hydraulic input into movement of the nose landing gear, allowing the aircraft to change direction while taxiing.",
+      "materials": [
+        "Steel",
+        "Aluminum alloy",
+        "Titanium alloy"
+      ],
+      "image": "images/components/nose-steering-actuator.webp"
+    },
+    {
+      "id": "nose-torque-link",
+      "name": "Nose Landing Gear Torque Link",
+      "partNumber": "301-0004-001",
+      "category": "Nose Landing Gear",
+      "aircraftApplication": "Embraer E-Jet Family",
+      "landingGearSystem": "Nose Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Controls the relative rotation of the inner and outer shock strut cylinders.",
+      "description": "The torque link assembly connects the upper and lower portions of the nose landing gear shock strut and helps maintain proper wheel alignment.",
+      "materials": [
+        "Steel",
+        "Aluminum alloy"
+      ],
+      "image": "images/components/nose-torque-link.webp"
+    },
+    {
+      "id": "nose-fork",
+      "name": "Nose Landing Gear Fork",
+      "partNumber": "301-0005-001",
+      "category": "Nose Landing Gear",
+      "aircraftApplication": "Boeing 737",
+      "landingGearSystem": "Nose Landing Gear",
+      "manufacturer": "Collins Aerospace",
+      "function": "Connects the nose wheels to the landing gear structure and supports the wheel axle.",
+      "description": "The nose landing gear fork is a structural component that supports the nose wheels and transfers ground loads into the landing gear assembly.",
+      "materials": [
+        "High-strength steel",
+        "Titanium alloy"
+      ],
+      "image": "images/components/nose-fork.webp"
+    },
+    {
+      "id": "nose-drag-brace",
+      "name": "Nose Landing Gear Drag Brace",
+      "partNumber": "301-0006-001",
+      "category": "Nose Landing Gear",
+      "aircraftApplication": "Airbus A350",
+      "landingGearSystem": "Nose Landing Gear",
+      "manufacturer": "Safran Landing Systems",
+      "function": "Provides longitudinal structural support and transfers loads within the nose landing gear assembly.",
+      "description": "The drag brace is a structural link that helps maintain the geometry of the nose landing gear and transfers longitudinal loads during ground operations.",
+      "materials": [
+        "High-strength steel",
+        "Titanium alloy"
+      ],
+      "image": "images/components/nose-drag-brace.webp"
+    },
+    {
+      "id": "tail-wheel",
+      "name": "Tail Wheel Assembly",
+      "partNumber": "401-0001-001",
+      "category": "Tail Landing Gear",
+      "aircraftApplication": "General Aviation Aircraft",
+      "landingGearSystem": "Tail Landing Gear",
+      "manufacturer": "Various Manufacturers",
+      "function": "Supports the rear section of an aircraft during ground operations.",
+      "description": "A tail wheel assembly is installed at the rear of aircraft equipped with conventional landing gear. It supports the tail section and allows the aircraft to move while taxiing.",
+      "materials": [
+        "Steel",
+        "Aluminum alloy",
+        "Rubber"
+      ],
+      "image": "images/components/tail-wheel.webp"
+    },
+    {
+      "id": "tail-wheel-fork",
+      "name": "Tail Wheel Fork",
+      "partNumber": "401-0002-001",
+      "category": "Tail Landing Gear",
+      "aircraftApplication": "General Aviation Aircraft",
+      "landingGearSystem": "Tail Landing Gear",
+      "manufacturer": "Various Manufacturers",
+      "function": "Supports and connects the tail wheel to the tail landing gear structure.",
+      "description": "The tail wheel fork provides the structural connection between the aircraft and the tail wheel and allows the wheel to rotate during ground operations.",
+      "materials": [
+        "Steel",
+        "Aluminum alloy"
+      ],
+      "image": "images/components/tail-wheel-fork.webp"
+    },
+    {
+      "id": "tail-shock-absorber",
+      "name": "Tail Landing Gear Shock Absorber",
+      "partNumber": "401-0003-001",
+      "category": "Tail Landing Gear",
+      "aircraftApplication": "General Aviation Aircraft",
+      "landingGearSystem": "Tail Landing Gear",
+      "manufacturer": "Various Manufacturers",
+      "function": "Absorbs loads and vibrations transmitted through the tail landing gear.",
+      "description": "The tail landing gear shock absorber reduces the loads transmitted to the aircraft structure during landing, taxiing, and other ground operations.",
+      "materials": [
+        "Steel",
+        "Rubber",
+        "Aluminum alloy"
+      ],
+      "image": "images/components/tail-shock-absorber.webp"
+    }
+  ]
+}

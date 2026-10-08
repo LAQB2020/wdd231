@@ -21,6 +21,7 @@
     <script src="./scripts/weather.js" defer ></script>
     <script src="./scripts/footer.js" defer ></script>
     <script src="./scripts/responsive-menu.js" defer ></script>
+    <script type="module" src="scripts/explorer.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,8 +39,8 @@
         <p id="my-name"> Landing Gear Component Explorer</p>   
         <nav>
             <ul class="navigation">
-                <li><a href="./index.html" id="home" class="active">Home</a></li>
-                <li><a href="./explorer.html" id="explorer">Explorer</a></li>
+                <li><a href="./index.html" id="home" >Home</a></li>
+                <li><a href="./explorer.html" id="explorer" class="active">Explorer</a></li>
                 <li><a href="./suggest-component.html" id="suggest-component">Suggest a component</a></li>
                 
             </ul>
@@ -47,79 +48,126 @@
     </header>
 
     
-       <main>
+       
+     <main>
 
-            <!-- Hero -->
-            <section class="hero">
-                 <img 
-                        src="images/landing-hero.webp"
-                        alt="Aerospace industry in Querétaro"
-                        width="1200"
-                        height="500"
-                        
-                    >
-
-                    <div class="hero-content">
-                        <h1>Landing Gear Component Explorer</h1>
-
-                        <p>
-                            Explore their functions,
-                            applications, and manufacturers in an interactive catalog.
-                        </p>
-
-                        <a href="explorer.html" class="cta-button">
-                            Explore components
-                        </a>
-                    </div>
-            </section>
-
-            <!-- Events + Weather -->
-            <div class="home info">
-
-                <section class="home-card events">
-                    <h2>About the project</h2>
-
-                    <article>
-                        <h3>Aerospace Networking Event</h3>
-                        <p>September 25, 2026</p>
-                        <p>
-                            The Landing Gear Component Explorer is an interactive website 
-                            that provides educational and technical information about 
-                            aircraft landing gear components. Users will be able to explore 
-                            components, search and filter the catalog, and view information 
-                            such as the component's function, aircraft application, 
-                            landing gear system, and manufacturer. The website is designed 
-                            to provide an accessible introduction to landing gear components 
-                            for aviation students, engineers, and aviation enthusiasts.
-                        </p>
-                    </article>
-
-                    
-                </section>
-            
+        
 
 
-                <section class="home-card weather">
-                    <h2>Querétaro Weather</h2>
+        <section class="explorer-section">
 
-                    <div id="current-weather">
-                        <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png"  alt="Weather icon">
-                        <p id="temperature"></p>
-                        <p id="description"></p>
-                    </div>
+            <h2>Explore Components</h2>
 
-                    <h3>3-Day Forecast</h3>
+            <p>
+                Search and filter landing gear components to find the information
+                you need.
+            </p>
 
-                    <div id="forecast">
-                        <!-- JavaScript -->
-                    </div>
 
-                </section>
+            <!-- Search -->
+
+            <div class="search-container">
+
+                <label for="component-search">
+                    Search components
+                </label>
+
+                <input
+                    type="search"
+                    id="component-search"
+                    name="component-search"
+                    placeholder="Search by component name or part number..."
+                >
+
             </div>
 
+
+            <!-- Filters -->
+
+            <div class="filters">
+
+                <h3>Filter by Landing Gear System</h3>
+
+                <div class="filter-buttons">
+
+                    <button
+                        type="button"
+                        class="filter-button active"
+                        data-filter="all"
+                    >
+                        All Components
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-button"
+                        data-filter="Main Landing Gear"
+                    >
+                        Main Landing Gear
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-button"
+                        data-filter="Nose Landing Gear"
+                    >
+                        Nose Landing Gear
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-button"
+                        data-filter="Tail Landing Gear"
+                    >
+                        Tail Landing Gear
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Components -->
+
+            <div
+                id="components-container"
+                class="components-container"
+                aria-live="polite"
+            >
+                <!-- Components will be generated dynamically with JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- Component Details Modal -->
+
+        <dialog id="component-details">
+
+            <div class="modal-content">
+
+                <button
+                    type="button"
+                    id="close-modal"
+                    class="close-modal"
+                    aria-label="Close component details"
+                >
+                    &times;
+                </button>
+
+                <div id="modal-component-content">
+                    <!-- Component information will be inserted dynamically -->
+                </div>
+
+            </div>
+
+        </dialog>
+
+    </main>
+            
            
 
-        </main>
+        
              
     
 

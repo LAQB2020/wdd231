@@ -245,8 +245,71 @@
          box-sizing: border-box;
      }
  
+      .explorer-section {
+        padding: 3rem 0;
+    }
 
 
+    .search-container {
+        max-width: 700px;
+    }
+
+
+    /* Filter buttons */
+
+    .filter-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .filter-button {
+        width: auto;
+    }
+
+
+    /* Component grid */
+
+    .components-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+
+    .component-card img {
+        height: 230px;
+    }
+
+
+    /* Modal */
+
+    .modal-content {
+        padding: 2rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .components-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* Card hover */
+
+    .component-card {
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .component-card:hover {
+        transform: translateY(-4px);
+
+        box-shadow: 0 6px 16px var(--shadow);
+    }
 
 }
 

@@ -713,6 +713,424 @@ footer a {
  }
 
 
+ /* =========================================
+   LANDING GEAR EXPLORER
+========================================= */
+
+.explorer-hero {
+    background-color: var(--navyblue);
+    color: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.explorer-hero h1 {
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.explorer-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   EXPLORER SECTION
+========================================= */
+
+.explorer-section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.explorer-section > h2 {
+    color: var(--titles);
+    margin-bottom: 0.5rem;
+}
+
+.explorer-section > p {
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-container {
+    margin-bottom: 2rem;
+}
+
+.search-container label {
+    display: block;
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.search-container input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 0.8rem;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background-color: var(--white);
+    color: var(--text);
+
+    font-size: 1rem;
+}
+
+.search-container input:focus {
+    outline: 3px solid var(--border);
+    border-color: var(--titles);
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.filters {
+    margin-bottom: 2rem;
+}
+
+.filters h3 {
+    color: var(--titles);
+    margin-bottom: 1rem;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.filter-button {
+    padding: 0.75rem 1rem;
+
+    border: 1px solid var(--titles);
+    border-radius: 6px;
+
+    background-color: var(--white);
+    color: var(--titles);
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Mouse over */
+
+.filter-button:hover {
+    background-color: var(--lightgray);
+    color: var(--navyblue);
+
+    transform: translateY(-2px);
+}
+
+
+/* Selected filter */
+
+.filter-button.active {
+    background-color: var(--titles);
+    color: var(--white);
+
+    border-color: var(--titles);
+
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+
+/* Selected filter + mouse over */
+
+.filter-button.active:hover {
+    background-color: var(--navyblue);
+    color: var(--white);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   COMPONENT GRID
+========================================= */
+
+.components-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+/* =========================================
+   COMPONENT CARD
+========================================= */
+
+.component-card {
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 6px var(--shadow);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   COMPONENT IMAGE
+========================================= */
+
+.component-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+
+/* Image hover */
+
+.component-card:hover img {
+    transform: scale(1.04);
+    filter: brightness(0.92);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.component-card-content {
+    padding: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+}
+
+.component-category {
+    color: var(--gray);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 0.5rem;
+}
+
+.component-card h2 {
+    color: var(--titles);
+
+    font-size: 1.25rem;
+
+    margin-bottom: 1rem;
+}
+
+.component-card p {
+    color: var(--text);
+
+    line-height: 1.5;
+
+    margin-bottom: 0.7rem;
+}
+
+
+/* =========================================
+   DETAILS BUTTON
+========================================= */
+
+.details-button {
+    margin-top: auto;
+
+    padding: 0.75rem 1rem;
+
+    border: 1px solid var(--titles);
+    border-radius: 6px;
+
+    background-color: var(--titles);
+    color: var(--white);
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.details-button:hover {
+    background-color: var(--navyblue);
+    border-color: var(--navyblue);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   NO RESULTS / ERROR
+========================================= */
+
+.no-results,
+.error-message {
+    padding: 2rem;
+
+    text-align: center;
+
+    background-color: var(--lightgray);
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    color: var(--gray);
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+#component-details {
+    width: 90%;
+    max-width: 700px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--white);
+
+    box-shadow: 0 8px 30px var(--shadow);
+}
+
+#component-details::backdrop {
+    background-color: var(--overlay);
+}
+
+.modal-content {
+    position: relative;
+
+    padding: 1.5rem;
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+}
+
+#modal-component-content img {
+    width: 100%;
+    height: auto;
+
+    max-height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    margin-bottom: 1.5rem;
+
+    transition: transform 0.3s ease;
+}
+
+#modal-component-content img:hover {
+    transform: scale(1.02);
+}
+
+#modal-component-content h2 {
+    color: var(--titles);
+
+    margin-bottom: 1rem;
+}
+
+#modal-component-content h3 {
+    color: var(--titles);
+
+    margin-top: 1.5rem;
+}
+
+#modal-component-content p {
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+#modal-component-content ul {
+    padding-left: 1.5rem;
+
+    color: var(--text);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.close-modal {
+    position: absolute;
+
+    top: 0.7rem;
+    right: 0.7rem;
+
+    width: 2.2rem;
+    height: 2.2rem;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--navyblue);
+    color: var(--white);
+
+    font-size: 1.4rem;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.close-modal:hover {
+    background-color: var(--titles);
+
+    transform: scale(1.08);
+}
+ 
+
  
 
 
