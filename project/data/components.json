@@ -14,7 +14,7 @@
         "High-strength steel",
         "Titanium alloy"
       ],
-      "image": "images/components/main-shock-strut.webp"
+      "image": "main-shock-strut.webp"
     },
     {
       "id": "main-wheel",
@@ -30,7 +30,7 @@
         "Aluminum alloy",
         "Steel"
       ],
-      "image": "images/components/main-wheel.webp"
+      "image": "main-wheel.webp"
     },
     {
       "id": "main-brake",
@@ -47,7 +47,7 @@
         "Steel",
         "Aluminum alloy"
       ],
-      "image": "images/components/main-brake.webp"
+      "image": "main-brake.webp"
     },
     {
       "id": "main-side-stay",
@@ -63,7 +63,7 @@
         "High-strength steel",
         "Titanium alloy"
       ],
-      "image": "images/components/main-side-stay.webp"
+      "image": "main-side-stay.webp"
     },
     {
       "id": "main-axle",
@@ -79,7 +79,7 @@
         "High-strength steel",
         "Titanium alloy"
       ],
-      "image": "images/components/main-axle.webp"
+      "image": "main-axle.webp"
     },
     {
       "id": "main-torque-link",
@@ -95,7 +95,7 @@
         "Steel",
         "Titanium alloy"
       ],
-      "image": "images/components/main-torque-link.webp"
+      "image": "main-torque-link.webp"
     },
     {
       "id": "nose-shock-strut",
@@ -111,7 +111,7 @@
         "High-strength steel",
         "Titanium alloy"
       ],
-      "image": "images/components/nose-shock-strut.webp"
+      "image": "nose-shock-strut.webp"
     },
     {
       "id": "nose-wheel",
@@ -127,7 +127,7 @@
         "Aluminum alloy",
         "Steel"
       ],
-      "image": "images/components/nose-wheel.webp"
+      "image": "nose-wheel.webp"
     },
     {
       "id": "nose-steering-actuator",
@@ -144,7 +144,7 @@
         "Aluminum alloy",
         "Titanium alloy"
       ],
-      "image": "images/components/nose-steering-actuator.webp"
+      "image": "nose-steering-actuator.webp"
     },
     {
       "id": "nose-torque-link",
@@ -160,7 +160,7 @@
         "Steel",
         "Aluminum alloy"
       ],
-      "image": "images/components/nose-torque-link.webp"
+      "image": "nose-torque-link.webp"
     },
     {
       "id": "nose-fork",
@@ -176,7 +176,7 @@
         "High-strength steel",
         "Titanium alloy"
       ],
-      "image": "images/components/nose-fork.webp"
+      "image": "nose-fork.webp"
     },
     {
       "id": "nose-drag-brace",
@@ -192,7 +192,7 @@
         "High-strength steel",
         "Titanium alloy"
       ],
-      "image": "images/components/nose-drag-brace.webp"
+      "image": "nose-drag-brace.webp"
     },
     {
       "id": "tail-wheel",
@@ -209,7 +209,7 @@
         "Aluminum alloy",
         "Rubber"
       ],
-      "image": "images/components/tail-wheel.webp"
+      "image": "tail-wheel.webp"
     },
     {
       "id": "tail-wheel-fork",
@@ -225,7 +225,7 @@
         "Steel",
         "Aluminum alloy"
       ],
-      "image": "images/components/tail-wheel-fork.webp"
+      "image": "tail-wheel-fork.webp"
     },
     {
       "id": "tail-shock-absorber",
@@ -242,7 +242,7 @@
         "Rubber",
         "Aluminum alloy"
       ],
-      "image": "images/components/tail-shock-absorber.webp"
+      "image": "tail-shock-absorber.webp"
     }
   ]
 }

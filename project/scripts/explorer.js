@@ -71,7 +71,7 @@ function displayComponents(componentList) {
 
         card.innerHTML = `
             <img
-                src="${component.image}"
+                src="./images/${component.image}"
                 alt="${component.name}"
                 loading="lazy"
                 width="400"
@@ -211,7 +211,7 @@ function showComponentDetails(component) {
 
     modalContent.innerHTML = `
         <img
-            src="${component.image}"
+            src="./images/${component.image}"
             alt="${component.name}"
             width="500"
             height="350"
